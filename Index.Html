@@ -1,1 +1,183 @@
-<>Html<>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondHand - Buy? Sell? Free Forever.</title>
+    <style>
+        body {
+            font-family: "San Francisco", Arial, sans-serif; /* San Francisco font */
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background */
+            color: #28666e; /* Main text color */
+        }
+        header {
+            background-color: #28666e; /* Dark teal */
+            color: #ffffff; /* White text */
+            padding: 10px;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            width: 200px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .category-panel {
+            flex: 1;
+            background-color: #7c9885; /* Light green */
+            padding: 10px;
+            color: #ffffff; /* White text */
+            font-weight: bold; /* Bold text */
+        }
+        .category-panel h2 {
+            color: #28666e; /* Dark teal */
+            font-weight: bold; /* Bold heading */
+        }
+        .category-panel ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .category-panel li {
+            margin-bottom: 5px;
+        }
+        .category-panel label {
+            margin-left: 5px;
+        }
+        .catalog {
+            flex: 3;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item {
+            width: 200px;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #28666e; /* Dark teal border */
+            background-color: #ffffff; /* White background */
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .item h3 {
+            color: #28666e; /* Dark teal */
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: bold; /* Bold item name */
+        }
+        .item p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .item button {
+            background-color: #28666e; /* Dark teal */
+            color: #ffffff; /* White text */
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            font-weight: bold; /* Bold button text */
+        }
+        .item button:hover {
+            background-color: #7c9885; /* Light green on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SecondHand</h1>
+        <p>Buy? Sell? Free Forever.</p>
+        <input type="text" placeholder="Search...">
+    </header>
+    <div class="container">
+        <div class="category-panel">
+            <h2>Categories</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="clothing" name="category" value="clothing">
+                    <label for="clothing">Clothing</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="electronics" name="category" value="electronics">
+                    <label for="electronics">Electronics</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="furniture" name="category" value="furniture">
+                    <label for="furniture">Furniture</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="accessories" name="category" value="accessories">
+                    <label for="accessories">Accessories</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="footwear" name="category" value="footwear">
+                    <label for="footwear">Footwear</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="automotive" name="category" value="automotive">
+                    <label for="automotive">Automotive</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="household" name="category" value="household">
+                    <label for="household">Household Items</label>
+                </li>
+                <!-- Add more categories as needed -->
+            </ul>
+        </div>
+        <div class="catalog">
+            <!-- Catalog boxes will be dynamically generated based on selected categories -->
+            <div class="item">
+                <img src="large_black_polo.jpg" alt="Large Black Polo">
+                <h3>Large Black Polo</h3>
+                <p>A classic black polo shirt in large size.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="glass_coffee_table.jpg" alt="Glass Coffee Table">
+                <h3>Glass Coffee Table</h3>
+                <p>A stylish glass coffee table for your living room.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="queen_size_mattress.jpg" alt="Queen Size Mattress">
+                <h3>Queen Size Mattress</h3>
+                <p>A comfortable queen size mattress in good condition.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="metal_water_bottle.jpg" alt="Metal Water Bottle">
+                <h3>1L Metal Water Bottle</h3>
+                <p>A durable 1-liter metal water bottle.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="sneakers.jpg" alt="Sneakers">
+                <h3>Sneakers</h3>
+                <p>Stylish and comfortable sneakers for everyday use.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="keyboard.jpg" alt=" Mechanical Keyboard">
+                <h3>Mechanical Keyboard</h3>
+                <p>Blue switch RGB 60% mechanical keyboard with bluetooth and USB C</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more items based on catalog -->
+        </div>
+    </div>
+</body>
+</html>
